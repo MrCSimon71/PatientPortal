@@ -4,7 +4,22 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <RootNamespace>PDDS.PatientData.Api</RootNamespace>
+    <RootNamespace>PDDS.PatientData.Api</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.20" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PDDS.PatientData.Core\PDDS.PatientData.Core.csproj" />
+    <ProjectReference Include="..\PDDS.PatientData.Data\PDDS.PatientData.Data.csproj" />
+    <ProjectReference Include="..\PDDS.PatientData.Services\PDDS.PatientData.Services.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url('HomeLayout.css');
+@import url('DefaultLayout.css');
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --sidebar-color: #1a2942;
+    --first-color: #4723d9;
+    --first-color-light: #70809a;
+    --white-color: #f7f6fb;
+    --body-font: "Nunito", sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .25s;
+}
+
+.center-content {
+    text-align: center;
+}
+

@@ -1,17 +1,38 @@
-var builder = WebApplication.CreateBuilder(args);
+using PDDS.PatientData.Api;
+using PDDS.PatientData.Core.Helpers;
 
-// Add services to the container.
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
 
-builder.Services.AddControllers();
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+}
 
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
+//// Add services to the container.
 
-app.UseAuthorization();
+//builder.Services.AddControllers();
 
-app.MapControllers();
+//var app = builder.Build();
 
-app.Run();
+//// Configure the HTTP request pipeline.
+
+//app.UseHttpsRedirection();
+
+//app.UseAuthorization();
+
+//app.MapControllers();
+
+//DatabaseHelper.InitializeDatabase();
+
+//app.Run();

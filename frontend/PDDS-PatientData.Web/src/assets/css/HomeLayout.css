@@ -1,0 +1,15 @@
+
+.home-container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+}
+
+.page-container {
+    position: fixed;
+    width: 100%;
+    min-height: 500px;
+}
