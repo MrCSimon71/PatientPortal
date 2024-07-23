@@ -1,0 +1,10 @@
+Vue.Js Frontend
+C# Backend API
+
+To run the frontend. From the command line
+	1) Navigate to the PDDS-PatientData.Web folder
+	2) Run npm install
+	3) Run npm run serve
+	4) Follow the url to open the frontend in a browser
+
+Note: Ensure the backend api, PDDS.PatientData.Api, is running

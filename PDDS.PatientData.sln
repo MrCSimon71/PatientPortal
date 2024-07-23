@@ -12,6 +12,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{77B1D409-4F95-4FBF-9A8C-9A1FE793DE04}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{643D5CBE-1F70-43B1-B4FE-24DC510AC160}"
+	ProjectSection(SolutionItems) = preProject
+		Frontend Setup Instructions.txt = Frontend Setup Instructions.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{F67F8506-77FB-4846-8999-F5649DC46E62}"
 	ProjectSection(SolutionItems) = preProject
