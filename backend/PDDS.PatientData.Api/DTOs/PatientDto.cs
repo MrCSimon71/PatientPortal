@@ -12,6 +12,6 @@
         public string? PostalCode { get; set; } = string.Empty;
         public string PrimaryPhone { get; set; } = string.Empty;
         public string? Email { get; set; } = string.Empty;
-        public string DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
     }
 }

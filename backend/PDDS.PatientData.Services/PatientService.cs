@@ -23,7 +23,6 @@ namespace PDDS.PatientData.Services
         {
             var patients = await _patientRepository.GetAllAsync<T>(searchFilter);
 
-            //var totalRecords = patients.Count();
             var totalRecords = _patientRepository.GetCountAsync<T>(searchFilter).Result;
 
             return (patients, totalRecords);

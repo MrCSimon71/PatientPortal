@@ -143,9 +143,9 @@ namespace PDDS.PatientData.Api.Controllers
         {
             try
             {
-                if (id <= 0)
+                if (id <= 0 || modifiedBy <= 0)
                 {
-                    return BadRequest("Invalid model object");
+                    return BadRequest("Bad data");
                 }
 
                 var response = await _patientService.DeleteAsync(id, modifiedBy);
