@@ -8,7 +8,7 @@ using PDDS.PatientData.Core.Helpers;
 using PDDS.PatientData.Core.Services;
 using IPDDSAuthenticationService = PDDS.PatientData.Core.Services.IAuthenticationService<PDDS.PatientData.Core.Entities.User, int>;
 
-namespace PDDS.PatientData.Core.JWT
+namespace PDDS.PatientData.Core.Middleware.JWT
 {
     public class JwtMiddleware
     {
@@ -44,7 +44,7 @@ namespace PDDS.PatientData.Core.JWT
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
-                    ValidateAudience = false,                    
+                    ValidateAudience = false,
                     ClockSkew = TimeSpan.Zero
                 }, out SecurityToken validatedToken);
 

@@ -1,6 +1,6 @@
 ﻿
 using PDDS.PatientData.Core.Entities;
-using PDDS.PatientData.Core.JWT;
+using PDDS.PatientData.Core.Middleware.JWT;
 
 namespace PDDS.PatientData.Core.Services
 {

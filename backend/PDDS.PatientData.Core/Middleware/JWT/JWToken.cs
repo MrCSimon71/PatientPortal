@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PDDS.PatientData.Core.JWT
+namespace PDDS.PatientData.Core.Middleware.JWT
 {
     public class JWToken
     {

@@ -13,6 +13,7 @@ namespace PDDS.PatientData.Api.Controllers
     [Authorize]
     [Route("[controller]")]
     [ApiController]
+    [Produces("application/json")]
     public class PatientsController : ControllerBase
     {
         private readonly IPatientService<Patient, int> _patientService;
@@ -53,8 +54,22 @@ namespace PDDS.PatientData.Api.Controllers
         }
 
         // GET /patients/5
+        /// <summary>
+        /// Gets dental information for a specific patient.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Returns patient data for the requested resource</returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     GET /Patients/5
+        ///
+        /// </remarks>
+        /// <response code="200">Returns patient data for the requested resource</response>
+        /// <response code="404">Returns 404 if resource not found</response>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(int id)
         {
             try

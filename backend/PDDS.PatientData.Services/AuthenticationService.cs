@@ -6,7 +6,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using PDDS.PatientData.Core.JWT;
 using PDDS.PatientData.Core.Entities;
 using PDDS.PatientData.Core.Helpers;
 using PDDS.PatientData.Core.Repositories;
@@ -14,6 +13,7 @@ using PDDS.PatientData.Core.Services;
 using PDDS.PatientData.Core.Filters;
 using PDDS.PatientData.Core.Entities;
 using System.Net;
+using PDDS.PatientData.Core.Middleware.JWT;
 
 namespace PDDS.PatientData.Services
 {
